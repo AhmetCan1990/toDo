@@ -1,0 +1,50 @@
+.form-check-input {
+  padding: 0.8rem !important;
+}
+td:nth-child(2) {
+  vertical-align: middle;
+}
+.son {
+  background-color: #f78166 !important;
+  transition: background-color 2s;
+  color: white !important;
+  font-weight: 600;
+}
+.ilk {
+  background-color: #4d244e !important;
+  transition: background-color 2s;
+  color: #f78166 !important;
+  font-weight: 600;
+}
+.linethrough {
+  text-decoration: line-through;
+  color: grey;
+}
+#dontforget {
+  padding: 1rem;
+  background-image: url(./assets/notebook.webp);
+  background-position: center;
+  background-size: cover;
+}
+#todo-ul {
+  list-style-type: disc;
+}
+.linethroughdiv {
+  text-decoration: line-through;
+  color: white;
+  background-color: #1f6feb;
+  animation-name: divanime;
+  animation: 2s divanime ease;
+}
+.rotatediv {
+  animation: 1s anim-flipX ease;
+  animation-name: divanime;
+}
+@keyframes divanime {
+  0% {
+    transform: rotateX(45def);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+}
