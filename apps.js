@@ -50,7 +50,7 @@ const wedinput = document.getElementById("wedinput");
 
 wedPlusAdon.addEventListener("click", () => {
   if (wedinput.value != "") {
-    const newdiv = document.createElement("div");
+    var newdiv = document.createElement("div");
     const newi = document.createElement("i");
     const newtextnode = document.createTextNode(" " + wedinput.value);
     newi.setAttribute("class", "fa-regular fa-square");
@@ -69,7 +69,10 @@ wedPlusAdon.addEventListener("click", () => {
 
 wedcontainer.addEventListener("click", (event) => {
   if (event.target.tagName == "I") {
-    event.target.parentElement.classList.add("linethroughdiv");
-    event.target.parentElement.remove();
+    event.target.parentElement.classList.remove("rotatediv");
+    event.target.parentElement.classList.toggle("linethroughdiv");
+    setTimeout(function () {
+      event.target.parentElement.remove();
+    }, 2000);
   }
 });

@@ -33,13 +33,22 @@ td:nth-child(2) {
   text-decoration: line-through;
   color: white;
   background-color: #1f6feb;
-  animation-name: divanime;
-  animation: 2s divanime ease;
+  animation-name: divanime2;
+  animation: 2s divanime2 ease;
+}
+@keyframes divanime2 {
+  0% {
+    transform: rotateX(45def);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
 }
 .rotatediv {
-  animation: 1s anim-flipX ease;
   animation-name: divanime;
+  animation: 1s divanime ease;
 }
+
 @keyframes divanime {
   0% {
     transform: rotateX(45def);
