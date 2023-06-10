@@ -48,7 +48,6 @@ td:nth-child(2) {
   animation-name: divanime;
   animation: 1s divanime ease;
 }
-
 @keyframes divanime {
   0% {
     transform: rotateX(45def);

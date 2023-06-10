@@ -11,7 +11,6 @@ tbody.addEventListener("click", (event) => {
   event.target.parentElement.previousElementSibling.classList.toggle("son");
 });
 // Don't forget to...
-
 const dontforget = document.getElementById("dontforget");
 const checksum = document.getElementById("checksum");
 dontforget.addEventListener("click", (event) => {
@@ -20,13 +19,11 @@ dontforget.addEventListener("click", (event) => {
     event.target.classList.toggle("fa-solid");
     event.target.classList.toggle("fa-xmark");
     event.target.classList.toggle("text-success");
-
     event.target.classList.contains("text-success") ? counter++ : counter--;
     counter < 0 && (counter = 1);
     checksum.innerText = `${counter} OUT OF 10 TIPS COMPLETED.`;
   }
 });
-
 // Todo list from inputbox
 const todoinptbtn2 = document.getElementById("todoinptbtn2");
 const todoinptbox2 = document.getElementById("todoinptbox2");
@@ -42,12 +39,10 @@ todoinptbox2.addEventListener("focus", () => {
   todoinptbox2.value = "";
 });
 // wednestay
-
 const wedcontainer = document.getElementById("wedcontainer");
 const weddivalert = document.getElementById("weddivalert");
 const wedPlusAdon = document.getElementById("wedPlusAdon");
 const wedinput = document.getElementById("wedinput");
-
 wedPlusAdon.addEventListener("click", () => {
   if (wedinput.value != "") {
     var newdiv = document.createElement("div");
@@ -66,7 +61,6 @@ wedPlusAdon.addEventListener("click", () => {
     wedinput.value = "";
   }
 });
-
 wedcontainer.addEventListener("click", (event) => {
   if (event.target.tagName == "I") {
     event.target.parentElement.classList.remove("rotatediv");
